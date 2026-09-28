@@ -1,0 +1,27 @@
+{
+  "name": "markdown-notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roktolop/markdown-notes-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Roktolop/markdown-notes-app/issues"
+  },
+  "homepage": "https://github.com/Roktolop/markdown-notes-app#readme",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "express": "^5.2.1",
+    "markdown-it": "^15.0.2",
+    "multer": "^2.4.0"
+  }
+}
