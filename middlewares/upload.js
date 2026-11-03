@@ -20,7 +20,18 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({ storage: storage });
+const fileFilter = (req, file, cb) => {
+    const fileExtension = path.extname(file.originalname).toLowerCase();
+    if (fileExtension !== '.md') {
+    const error = new Error("Only .md files are allowed");
+    error.status = 400;
+    return cb(error, false);
+    } else {
+        cb(null, true);
+    }
+};
+
+const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 export default upload;
 
